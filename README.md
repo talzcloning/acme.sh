@@ -465,6 +465,19 @@ Speak ACME language using shell, directly to "Let's Encrypt".
 
 TODO:
 
+#How to run on Windows with Cygwin or git bash.
+
+Download cygwin installer: setup-x86.exe or setup-x86_64.exe from: https://cygwin.com/
+
+In the installer, select: Net: curl and Net: socat to install.
+
+```sh
+.\setup-x86_64.exe -qgnNdO -R C:/tools/cygwin -s https://download.nus.edu.sg -P socat,curl,cron,unzip,git,xxd
+```
+
+After install finished, you can open the Cygwin window and use curl to install acme.shonline: https://github.com/Neilpang/le/wiki#1-how-to-install
+
+A scheduler task will be installed in your Windows scheduler to renew your certs.
 
 # 18. Acknowledgments
 
